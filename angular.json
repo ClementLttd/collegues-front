@@ -3,21 +3,22 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "zzz": {
+        "collegues-front": {
+            "projectType": "application",
+            "schematics": {},
             "root": "",
             "sourceRoot": "src",
-            "projectType": "application",
             "prefix": "app",
-            "schematics": {},
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/zzz",
+                        "outputPath": "dist/collegues-front",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
-                        "tsConfig": "src/tsconfig.app.json",
+                        "tsConfig": "tsconfig.app.json",
+                        "aot": false,
                         "assets": [
                             "src/favicon.ico",
                             "src/assets"
